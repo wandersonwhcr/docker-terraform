@@ -1,0 +1,6 @@
+.aws
+.bash_history
+.terraform
+.terraform.d
+.terraform.lock.hcl
+terraform.tfstate.backup
