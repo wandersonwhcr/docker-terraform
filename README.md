@@ -27,4 +27,6 @@ docker-compose exec cli terraform apply
 docker-compose exec cli terraform destroy
 
 docker-compose exec cli bash
+
+docker-compose down
 ```
