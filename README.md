@@ -10,9 +10,9 @@ A Simple Docker Terraform Image
 docker build . --tag wandersonwhcr/terraform
 
 docker run --rm --interactive --tty \
-    --volume `pwd`:/app \
-    --user `id -u`:`id -g` \
     --env HOME=/app \
+    --user `id -u`:`id -g` \
+    --volume `pwd`:/app \
     wandersonwhcr/terraform terraform init
 ```
 
