@@ -4,6 +4,20 @@ A Simple Docker Terraform Image
 
 ## Usage
 
+### Docker
+
+```
+docker build . --tag wandersonwhcr/terraform
+
+docker run --rm --interactive --tty \
+    --volume `pwd`:/app \
+    --user `id -u`:`id -g` \
+    --env HOME=/app \
+    wandersonwhcr/terraform terraform init
+```
+
+### Docker Compose
+
 ```
 docker-compose up --detach
 
